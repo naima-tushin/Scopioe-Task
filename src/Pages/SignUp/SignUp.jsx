@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import img from '../../assets/images/Login.png';
 import { Link, useNavigate } from 'react-router-dom';
-import { auth, createUserWithEmailAndPassword } from '../../firebase/firebase.config'; 
+import { auth, createUserWithEmailAndPassword } from '../../firebase/firebase.config';
 
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -24,15 +24,15 @@ const SignUp = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         if (password !== confirmPassword) {
             setError('Passwords do not match.');
             return;
         }
-        
+
         try {
             await createUserWithEmailAndPassword(auth, email, password);
-            navigate('/home'); 
+            navigate('/home');
         } catch (error) {
             setError(error.message);
         }
@@ -60,7 +60,7 @@ const SignUp = () => {
                         <h1 className='uppercase text-3xl text-[#4285F3] font-poor-richard'>Logo</h1>
                         <h2 className='text-2xl font-bold font-poppins'>Sign Up for an Account</h2>
                         <p className='text-sm font-medium text-slate-500 leading-5 tracking-wide mb-1'>
-                            Welcome! By clicking the sign-up button, you agree to Zenitood Terms and Service and acknowledge the 
+                            Welcome! By clicking the sign-up button, you agree to Zenitood Terms and Service and acknowledge the
                             <span className='text-[#4285F3] underline'>Privacy and Policy</span>
                         </p>
                         <div className="form-control">

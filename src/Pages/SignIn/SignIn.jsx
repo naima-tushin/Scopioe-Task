@@ -21,7 +21,7 @@ const SignIn = () => {
         try {
             const result = await signInWithPopup(auth, googleProvider);
             console.log(result.user);
-            navigate('/home'); 
+            navigate('/home');
         } catch (error) {
             console.error(error);
         }
@@ -31,7 +31,7 @@ const SignIn = () => {
         try {
             const result = await signInWithPopup(auth, facebookProvider);
             console.log(result.user);
-            navigate('/home'); 
+            navigate('/home');
         } catch (error) {
             console.error(error);
         }
@@ -41,7 +41,7 @@ const SignIn = () => {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            navigate('/home'); 
+            navigate('/home');
         } catch (error) {
             if (error.code === 'auth/wrong-password') {
                 setError('Incorrect password. Please try again.');
