@@ -6,6 +6,7 @@ import img from '../../assets/images/Login.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth, facebookProvider, googleProvider, signInWithPopup, signInWithEmailAndPassword } from '../../firebase/firebase.config';
 
+
 const SignIn = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [email, setEmail] = useState('');
@@ -20,7 +21,12 @@ const SignIn = () => {
     const handleSignInWithGoogle = async () => {
         try {
             const result = await signInWithPopup(auth, googleProvider);
-            console.log(result.user);
+            const user = result.user;
+            localStorage.setItem('user', JSON.stringify({
+                name: user.displayName || '',
+                email: user.email || '',
+                photoURL: user.photoURL || '',
+            }));
             navigate('/home');
         } catch (error) {
             console.error(error);
@@ -28,9 +34,16 @@ const SignIn = () => {
     };
 
     const handleSignInWithFacebook = async () => {
+
         try {
             const result = await signInWithPopup(auth, facebookProvider);
-            console.log(result.user);
+            const user = result.user;
+            console.log(user);
+            localStorage.setItem('user', JSON.stringify({
+                name: user.displayName || '',
+                email: user.email || '',
+                photoURL: '',
+            }));
             navigate('/home');
         } catch (error) {
             console.error(error);
@@ -40,7 +53,14 @@ const SignIn = () => {
     const handleSignInWithEmail = async (e) => {
         e.preventDefault();
         try {
-            await signInWithEmailAndPassword(auth, email, password);
+            const result = await signInWithEmailAndPassword(auth, email, password);
+            const user = result.user;
+            
+            localStorage.setItem('user', JSON.stringify({
+                name: '', 
+                email: user.email || '',
+                photoURL: '', 
+            }));
             navigate('/home');
         } catch (error) {
             if (error.code === 'auth/wrong-password') {

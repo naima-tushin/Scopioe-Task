@@ -1,19 +1,20 @@
 import React from 'react';
+import img from '../../assets/images/img1.png';
 
 const Search = () => {
     return (
-        <div className="flex bg-white p-8">
-            <div className="w-1/2">
-                <h1 className="text-3xl font-bold mb-4">Find a Therapist</h1>
-                <p className="mb-4">Search by zip code or city name</p>
+        <div className="flex bg-white w-[95%] mx-auto p-8 rounded-md">
+            <div className="w-full">
+                <h1 className="text-xl font-bold mb-4">I'm Looking for Massage Therapist Near...</h1>
+                <p className="mb-4 text-base w-[57%]">In using this site, I agree to be bound by the <span className='text-[#156BCA] underline'>Terms of Service</span>  and  <span className='text-[#156BCA] underline'>Privacy Policy</span></p>
                 <input
                     type="text"
                     placeholder="Enter zip code or city name"
-                    className="border p-2 w-full"
+                    className="border p-2 w-[57%] rounded-lg"
                 />
             </div>
             <div className="w-1/2">
-                <img src="therapist.jpg" alt="Therapist" className="w-full h-auto" />
+                <img src={img} alt="Therapist" />
             </div>
         </div>
     );

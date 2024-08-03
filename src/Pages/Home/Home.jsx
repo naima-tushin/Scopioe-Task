@@ -11,7 +11,7 @@ const Home = () => {
       <aside className="w-[250px]">
         <Dashboard></Dashboard>
       </aside>
-      <main className="w-[1270px]">
+      <main className="w-[1290px] bg-[#EEF2F5]">
         <Navbar></Navbar>
         <Search></Search>
         {/* <FeaturedTherapists></FeaturedTherapists> */}
