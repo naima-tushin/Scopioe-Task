@@ -1,16 +1,44 @@
 [
     {
         "id": 1,
-        "image": "https://i.ibb.co/Fx6QTgw/Dp5.png",
-        "location": "123 Main St, Cityville",
-        "exercise": "Healing Bodywork by Cort",
-        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of...Read More"
+        "img": "https://i.ibb.co/mTKxPHq/Dp6.png",
+        "location": "123 Elm Street, New York",
+        "exercise": "Healing Bodywork",
+        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of..."
     },
     {
         "id": 2,
-        "image": "https://i.ibb.co/mTKxPHq/Dp6.png",
-        "location": "123 Main St, Cityville",
-        "exercise": "Healing Bodywork by Cort",
-        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of...Read More"
+        "img": "https://i.ibb.co/Fx6QTgw/Dp5.png",
+        "location": "123 Elm Street, New York",
+        "exercise": "Healing Bodywork",
+        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of..."
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/mq9yTG7/Dp4.png",
+        "location": "123 Elm Street, New York",
+        "exercise": "Healing Bodywork",
+        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of..."
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/6bq7Pr6/Dp3.png",
+        "location": "123 Elm Street, New York",
+        "exercise": "Healing Bodywork",
+        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of..."
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/z28vxnb/Dp2.png",
+        "location": "123 Elm Street, New York",
+        "exercise": "Healing Bodywork",
+        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of..."
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/Q9JsMdS/Dp1.png",
+        "location": "123 Elm Street, New York",
+        "exercise": "Healing Bodywork",
+        "testimonial": "Cort’s healing bodywork massage was absolutely transformative. Their intuitive touch and deep understanding of..."
     }
 ]
