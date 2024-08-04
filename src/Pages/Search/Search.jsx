@@ -6,8 +6,8 @@ const Search = () => {
     return (
         <div className="flex bg-white w-[95%] mx-auto p-8 rounded-md">
             <div className="w-full">
-                <h1 className="text-xl font-bold mb-4">I'm Looking for Massage Therapist Near...</h1>
-                <p className="mb-6 text-base w-[50%]">
+                <h1 className="text-xl font-bold mb-2">I'm Looking for Massage Therapist Near...</h1>
+                <p className="mb-5 text-base w-[50%]">
                     In using this site, I agree to be bound by the <span className='text-[#156BCA] underline font-medium'>Terms of Service</span> and <span className='text-[#156BCA] underline font-medium'>Privacy Policy</span>
                 </p>
                 <div className="relative w-[52%]">
@@ -22,8 +22,8 @@ const Search = () => {
                 </div>
             </div>
             <div className="relative">
-                <img src={img1} alt="Therapist" className='w-[350px]' />
-                <img src={img2} alt="Therapy" className="absolute bottom-0 right-32 h-40 z-10" />
+                <img src={img1} alt="Therapist" className='w-[300px]' />
+                <img src={img2} alt="Therapy" className="absolute bottom-0 right-28 h-40 z-10" />
             </div>
         </div>
     );

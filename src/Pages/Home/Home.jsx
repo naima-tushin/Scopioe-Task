@@ -14,7 +14,7 @@ const Home = () => {
       <main className="w-[1290px] bg-[#EEF2F5]">
         <Navbar></Navbar>
         <Search></Search>
-        {/* <FeaturedTherapists></FeaturedTherapists> */}
+        <FeaturedTherapists></FeaturedTherapists>
         <BottomSection></BottomSection>
       </main>
     </div>
