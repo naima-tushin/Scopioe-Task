@@ -46,10 +46,10 @@ const Navbar = () => {
                     />
                     <div>
                         <div className="flex items-center justify-between">
-                            <span className="font-semibold mr-2 text-sm">{user.name || 'John Doe'}</span>
+                            <span className="font-semibold mr-2 text-sm">{user.name || 'No Name'}</span>
                             <IoIosArrowDown /> 
                         </div>
-                        <span className="text-gray-600 text-sm">{user.email || 'johndoe@gmail.com'}</span>
+                        <span className="text-gray-600 text-sm">{user.email || 'No Email'}</span>
                     </div>
                 </div>
                 <div className="flex items-center">

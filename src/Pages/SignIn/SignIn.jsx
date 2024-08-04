@@ -55,11 +55,11 @@ const SignIn = () => {
         try {
             const result = await signInWithEmailAndPassword(auth, email, password);
             const user = result.user;
-            
+
             localStorage.setItem('user', JSON.stringify({
-                name: '', 
+                name: '',
                 email: user.email || '',
-                photoURL: '', 
+                photoURL: '',
             }));
             navigate('/home');
         } catch (error) {
